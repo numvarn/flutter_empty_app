@@ -12,7 +12,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Phisan App")),
-      body: Center(child: Text("Hello, Phisan!")),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Hello, Phisan!"),
+            Text("Welcome to your Flutter app!"),
+          ],
+        ),
+      ),
     );
   }
 }
